@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="si" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUTHTHA.ORG - සූත්‍ර කියවනය</title>
+  <link rel="icon" type="image/png" href="static/images/android-icon-192x192.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="reader-pair">
+
+  <div class="app">
+
+    <!-- ===== Navbar ===== -->
+    <header class="navbar">
+      <a class="brand" href="index.html" title="SUTHTHA.ORG">
+        <img src="static/images/app-logo.jpg" alt="SUTHTHA.ORG">
+        <span class="brand-text">
+          <span class="brand-name">SUTHTHA.ORG</span>
+          <span class="brand-sub">සූත්‍ර පොත් විවෘත කියවනය</span>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="https://nipunadhamma.org" target="_blank" rel="noopener">නිපුනධම්ම</a>
+        <a href="https://suththa.org">ධම්මපොත</a>
+        <a href="index.html" class="active">HOME</a>
+        <button class="nav-btn" data-open-note>NOTE</button>
+        <button class="theme-toggle" id="themeToggle" title="Dark / Light mode" aria-label="Toggle theme">🌙</button>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </header>
+
+    <div class="nav-mobile" id="navMobile">
+      <a href="https://nipunadhamma.org" target="_blank" rel="noopener">නිපුනධම්ම</a>
+      <a href="https://suththa.org">ධම්මපොත</a>
+      <a href="index.html">HOME</a>
+      <button class="nav-btn" data-open-note>NOTE</button>
+      <button class="nav-btn" id="themeToggleMobile">🌙 Dark / Light</button>
+    </div>
+
+    <!-- ===== Layout ===== -->
+    <div class="app-layout">
+
+      <!-- ===== Sidebar: Book tree ===== -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-head">
+          <h2>පොත් ගස</h2>
+          <button class="modal-close" id="sidebarClose" title="සඟවන්න">✕</button>
+        </div>
+        <nav class="tree" id="tree" aria-label="Book tree">
+          <div class="empty">පොත් ගස පූරණය වේ...</div>
+        </nav>
+      </aside>
+
+      <button class="sidebar-toggle" id="sidebarToggle" title="පොත් ගස පෙන්වන්න / සඟවන්න">📚</button>
+
+      <!-- ===== Content ===== -->
+      <main class="content">
+        <div class="toolbar">
+          <div class="searchbox">
+            <input type="search" id="searchInput" placeholder="සොයන්න... (උදා: චිත්තං, මෙත්තා)" autocomplete="off">
+            <div class="search-results hidden" id="searchResults"></div>
+          </div>
+
+          <div class="filters" id="filters">
+            <button class="filter-chip active" data-cat="all">සියල්ල</button>
+            <button class="filter-chip" data-cat="sut">සූත්‍ර</button>
+            <button class="filter-chip" data-cat="vin">විනය</button>
+            <button class="filter-chip" data-cat="abh">අභිධර්ම</button>
+            <button class="filter-chip" data-cat="atta">අට්ඨකථා</button>
+            <button class="filter-chip" data-cat="anya">වෙනත්</button>
+          </div>
+
+          <div class="tool-actions">
+            <button id="fontMinus" title="අකුරු කුඩා කරන්න">A−</button>
+            <span id="fontValue">100%</span>
+            <button id="fontPlus" title="අකුරු ලොකු කරන්න">A+</button>
+
+            <div class="lang-toggle" id="langToggle">
+              <button data-lang="si" class="active">සිංහල</button>
+              <button data-lang="pi">පාලි</button>
+            </div>
+
+            <button id="bookmarkBtn" title="මෙම පොත Bookmark කරන්න">★</button>
+            <button id="bmListBtn" title="මගේ bookmarks">☆</button>
+
+            <div class="mode-select">
+              <button id="modeBtn">පාලි + සිංහල ▾</button>
+              <div class="mode-menu hidden" id="modeMenu">
+                <button data-mode="pair" class="active">පාලි + සිංහල</button>
+                <button data-mode="split">පැත්ත පැත්ත</button>
+                <button data-mode="single">එක භාෂාවක් පමණක්</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reader-scroll" id="readerScroll">
+          <section class="reader" id="reader">
+            <div class="book-head hidden" id="bookHead">
+              <h1 id="bookTitle"></h1>
+              <div class="book-meta" id="bookMeta"></div>
+              <div class="book-links">
+                <a class="navlink" id="attaLink" href="#" title="මෙහි අට්ඨකථාවට යන්න">A</a>
+                <a class="navlink" id="suLink" href="#" title="සූත්‍රයට ආපසු යන්න">Su</a>
+                <span class="navlink-label" id="navLinkLabel"></span>
+              </div>
+            </div>
+            <div id="readerArea">
+              <div class="empty">
+                <p>පොත් ගසෙන් ග්‍රන්ථයක් තෝරා කියවන්න.</p>
+                <p><button id="welcomeBrowse">📚 පොත් ගස පෙන්වන්න</button></p>
+              </div>
+            </div>
+            <div class="loading hidden" id="readerLoading">ග්‍රන්ථය පූරණය වේ...</div>
+            <div id="infiniteSentinel"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <h4>SUTHTHA.ORG</h4>
+          <p class="f-about">
+            සිංහල පාඨය සහ පාලි පාඨය සමඟ ත්‍රිපිටක සූත්‍ර, විනය,
+            අභිධර්ම, අට්ඨකථා සහ වෙනත් පොත් කියවීමට හැකි විවෘත කියවනයකි.
+          </p>
+        </div>
+        <div>
+          <h4>මෙනුව</h4>
+          <a href="index.html">HOME</a>
+          <a href="https://suththa.org" target="_blank" rel="noopener">ධම්මපොත (suththa.org)</a>
+          <a href="https://nipunadhamma.org" target="_blank" rel="noopener">නිපුනධම්ම (nipunadhamma.org)</a>
+          <a href="#" data-open-note>NOTE - සටහන්</a>
+        </div>
+        <div>
+          <h4>පොත්</h4>
+          <a href="#" data-open-tree="sp">සූත්‍ර පිටකය</a>
+          <a href="#" data-open-tree="vp">විනය පිටකය</a>
+          <a href="#" data-open-tree="ap">අභිධර්ම පිටකය</a>
+          <a href="#" data-open-tree="atta">අට්ඨකථා</a>
+          <a href="#" data-open-tree="anya">වෙනත් පොත්</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span id="year"></span> SUTHTHA.ORG · සියලු හිමිකම් ඇවිරිණි
+      </div>
+    </footer>
+
+    <!-- ===== Modals ===== -->
+
+    <!-- Bookmark modal -->
+    <div class="modal-overlay hidden" id="bookmarksModal">
+      <div class="modal">
+        <div class="modal-head">
+          <h3>★ මගේ Bookmarks</h3>
+          <button class="modal-close" data-close="bookmarksModal">✕</button>
+        </div>
+        <div class="modal-body" id="bookmarksList"></div>
+      </div>
+    </div>
+
+    <!-- Note modal -->
+    <div class="modal-overlay hidden" id="noteModal">
+      <div class="modal">
+        <div class="modal-head">
+          <h3>📝 සටහන</h3>
+          <button class="modal-close" data-close="noteModal">✕</button>
+        </div>
+        <div class="modal-body">
+          <p class="bm-empty" id="noteFor" style="text-align:left; padding:0 0 8px;"></p>
+          <textarea class="modal-note" id="noteText" placeholder="මෙම සූත්‍රය ගැන ඔබේ සටහන ලියන්න..."></textarea>
+        </div>
+        <div class="modal-actions">
+          <a href="notes.html" target="_blank" rel="noopener">සියලු සටහන් ➜</a>
+          <button class="modal-close" data-close="noteModal">අවලංගු</button>
+          <button id="noteSave" style="background: var(--accent); color:#fff; border-color:var(--accent);">සුරකින්න</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dictionary popup -->
+    <div class="dict-popup hidden" id="dictPopup">
+      <button class="dp-close" id="dictClose">✕</button>
+      <div id="dictBody"></div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+  </div>
+
+  <script src="js/dictionary.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

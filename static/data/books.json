@@ -1,0 +1,989 @@
+﻿{
+    "generated":  "2026-08-07",
+    "books":  {
+                  "an-1":  {
+                               "category":  "sut",
+                               "file":  "static/text/an/an-1.json"
+                           },
+                  "an-10-2":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/an/an-10-2.json"
+                              },
+                  "an-10-3":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/an/an-10-3.json"
+                              },
+                  "an-10-4":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/an/an-10-4.json"
+                              },
+                  "an-10-5":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/an/an-10-5.json"
+                              },
+                  "an-10":  {
+                                "category":  "sut",
+                                "file":  "static/text/an/an-10.json"
+                            },
+                  "an-11":  {
+                                "category":  "sut",
+                                "file":  "static/text/an/an-11.json"
+                            },
+                  "an-2":  {
+                               "category":  "sut",
+                               "file":  "static/text/an/an-2.json"
+                           },
+                  "an-3-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-3-2.json"
+                             },
+                  "an-3-3":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-3-3.json"
+                             },
+                  "an-3":  {
+                               "category":  "sut",
+                               "file":  "static/text/an/an-3.json"
+                           },
+                  "an-4-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-4-2.json"
+                             },
+                  "an-4-3":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-4-3.json"
+                             },
+                  "an-4-4":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-4-4.json"
+                             },
+                  "an-4-5":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-4-5.json"
+                             },
+                  "an-4":  {
+                               "category":  "sut",
+                               "file":  "static/text/an/an-4.json"
+                           },
+                  "an-5-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-5-2.json"
+                             },
+                  "an-5-3":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-5-3.json"
+                             },
+                  "an-5-4":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-5-4.json"
+                             },
+                  "an-5-5":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-5-5.json"
+                             },
+                  "an-5":  {
+                               "category":  "sut",
+                               "file":  "static/text/an/an-5.json"
+                           },
+                  "an-6-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-6-2.json"
+                             },
+                  "an-6":  {
+                               "category":  "sut",
+                               "file":  "static/text/an/an-6.json"
+                           },
+                  "an-7-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-7-2.json"
+                             },
+                  "an-7":  {
+                               "category":  "sut",
+                               "file":  "static/text/an/an-7.json"
+                           },
+                  "an-8-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/an/an-8-2.json"
+                             },
+                  "an-8":  {
+                               "category":  "sut",
+                               "file":  "static/text/an/an-8.json"
+                           },
+                  "an-9":  {
+                               "category":  "sut",
+                               "file":  "static/text/an/an-9.json"
+                           },
+                  "dn-1-11":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/dn/dn-1-11.json"
+                              },
+                  "dn-1-3":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/dn/dn-1-3.json"
+                             },
+                  "dn-1-6":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/dn/dn-1-6.json"
+                             },
+                  "dn-1":  {
+                               "category":  "sut",
+                               "file":  "static/text/dn/dn-1.json"
+                           },
+                  "dn-2-3":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/dn/dn-2-3.json"
+                             },
+                  "dn-2-4":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/dn/dn-2-4.json"
+                             },
+                  "dn-2-7":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/dn/dn-2-7.json"
+                             },
+                  "dn-2":  {
+                               "category":  "sut",
+                               "file":  "static/text/dn/dn-2.json"
+                           },
+                  "dn-3-10":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/dn/dn-3-10.json"
+                              },
+                  "dn-3-5":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/dn/dn-3-5.json"
+                             },
+                  "dn-3":  {
+                               "category":  "sut",
+                               "file":  "static/text/dn/dn-3.json"
+                           },
+                  "mn-1-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-1-2.json"
+                             },
+                  "mn-1-3":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-1-3.json"
+                             },
+                  "mn-1-4":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-1-4.json"
+                             },
+                  "mn-1-5":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-1-5.json"
+                             },
+                  "mn-1":  {
+                               "category":  "sut",
+                               "file":  "static/text/mn/mn-1.json"
+                           },
+                  "mn-2-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-2-2.json"
+                             },
+                  "mn-2-3":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-2-3.json"
+                             },
+                  "mn-2-4":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-2-4.json"
+                             },
+                  "mn-2-5":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-2-5.json"
+                             },
+                  "mn-2":  {
+                               "category":  "sut",
+                               "file":  "static/text/mn/mn-2.json"
+                           },
+                  "mn-3-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-3-2.json"
+                             },
+                  "mn-3-3":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-3-3.json"
+                             },
+                  "mn-3-4":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-3-4.json"
+                             },
+                  "mn-3-5":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/mn/mn-3-5.json"
+                             },
+                  "mn-3":  {
+                               "category":  "sut",
+                               "file":  "static/text/mn/mn-3.json"
+                           },
+                  "sn-1-3":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-1-3.json"
+                             },
+                  "sn-1-7":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-1-7.json"
+                             },
+                  "sn-1":  {
+                               "category":  "sut",
+                               "file":  "static/text/sn/sn-1.json"
+                           },
+                  "sn-2-1-5":  {
+                                   "category":  "sut",
+                                   "file":  "static/text/sn/sn-2-1-5.json"
+                               },
+                  "sn-2-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-2-2.json"
+                             },
+                  "sn-2-5":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-2-5.json"
+                             },
+                  "sn-2":  {
+                               "category":  "sut",
+                               "file":  "static/text/sn/sn-2.json"
+                           },
+                  "sn-3-1-2":  {
+                                   "category":  "sut",
+                                   "file":  "static/text/sn/sn-3-1-2.json"
+                               },
+                  "sn-3-1-3":  {
+                                   "category":  "sut",
+                                   "file":  "static/text/sn/sn-3-1-3.json"
+                               },
+                  "sn-3-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-3-2.json"
+                             },
+                  "sn-3-7":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-3-7.json"
+                             },
+                  "sn-3":  {
+                               "category":  "sut",
+                               "file":  "static/text/sn/sn-3.json"
+                           },
+                  "sn-4-1-12":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/sn/sn-4-1-12.json"
+                                },
+                  "sn-4-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-4-2.json"
+                             },
+                  "sn-4-8":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-4-8.json"
+                             },
+                  "sn-4":  {
+                               "category":  "sut",
+                               "file":  "static/text/sn/sn-4.json"
+                           },
+                  "sn-5-11":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/sn/sn-5-11.json"
+                              },
+                  "sn-5-12":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/sn/sn-5-12.json"
+                              },
+                  "sn-5-2":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-5-2.json"
+                             },
+                  "sn-5-3":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-5-3.json"
+                             },
+                  "sn-5-4":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-5-4.json"
+                             },
+                  "sn-5-7":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/sn/sn-5-7.json"
+                             },
+                  "sn-5":  {
+                               "category":  "sut",
+                               "file":  "static/text/sn/sn-5.json"
+                           },
+                  "kn-ap-1-19":  {
+                                     "category":  "sut",
+                                     "file":  "static/text/kn/kn-ap-1-19.json"
+                                 },
+                  "kn-ap-1-33":  {
+                                     "category":  "sut",
+                                     "file":  "static/text/kn/kn-ap-1-33.json"
+                                 },
+                  "kn-ap-1-41":  {
+                                     "category":  "sut",
+                                     "file":  "static/text/kn/kn-ap-1-41.json"
+                                 },
+                  "kn-ap-1-45":  {
+                                     "category":  "sut",
+                                     "file":  "static/text/kn/kn-ap-1-45.json"
+                                 },
+                  "kn-ap-1-5":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/kn/kn-ap-1-5.json"
+                                },
+                  "kn-ap-1-53":  {
+                                     "category":  "sut",
+                                     "file":  "static/text/kn/kn-ap-1-53.json"
+                                 },
+                  "kn-ap-2":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/kn/kn-ap-2.json"
+                              },
+                  "kn-ap":  {
+                                "category":  "sut",
+                                "file":  "static/text/kn/kn-ap.json"
+                            },
+                  "kn-bv":  {
+                                "category":  "sut",
+                                "file":  "static/text/kn/kn-bv.json"
+                            },
+                  "kn-cp":  {
+                                "category":  "sut",
+                                "file":  "static/text/kn/kn-cp.json"
+                            },
+                  "kn-dhp":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/kn/kn-dhp.json"
+                             },
+                  "kn-iti":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/kn/kn-iti.json"
+                             },
+                  "kn-jat-11":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/kn/kn-jat-11.json"
+                                },
+                  "kn-jat-15":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/kn/kn-jat-15.json"
+                                },
+                  "kn-jat-18":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/kn/kn-jat-18.json"
+                                },
+                  "kn-jat-22-10":  {
+                                       "category":  "sut",
+                                       "file":  "static/text/kn/kn-jat-22-10.json"
+                                   },
+                  "kn-jat-22-6":  {
+                                      "category":  "sut",
+                                      "file":  "static/text/kn/kn-jat-22-6.json"
+                                  },
+                  "kn-jat-22":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/kn/kn-jat-22.json"
+                                },
+                  "kn-jat-5":  {
+                                   "category":  "sut",
+                                   "file":  "static/text/kn/kn-jat-5.json"
+                               },
+                  "kn-jat":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/kn/kn-jat.json"
+                             },
+                  "kn-khp":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/kn/kn-khp.json"
+                             },
+                  "kn-mn-14":  {
+                                   "category":  "sut",
+                                   "file":  "static/text/kn/kn-mn-14.json"
+                               },
+                  "kn-mn-6":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/kn/kn-mn-6.json"
+                              },
+                  "kn-mn":  {
+                                "category":  "sut",
+                                "file":  "static/text/kn/kn-mn.json"
+                            },
+                  "kn-nc-18":  {
+                                   "category":  "sut",
+                                   "file":  "static/text/kn/kn-nc-18.json"
+                               },
+                  "kn-nc-5":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/kn/kn-nc-5.json"
+                              },
+                  "kn-nc":  {
+                                "category":  "sut",
+                                "file":  "static/text/kn/kn-nc.json"
+                            },
+                  "kn-nett-3-3":  {
+                                      "category":  "sut",
+                                      "file":  "static/text/kn/kn-nett-3-3.json"
+                                  },
+                  "kn-nett":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/kn/kn-nett.json"
+                              },
+                  "kn-petk-6":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/kn/kn-petk-6.json"
+                                },
+                  "kn-petk":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/kn/kn-petk.json"
+                              },
+                  "kn-ps-1-1-17":  {
+                                       "category":  "sut",
+                                       "file":  "static/text/kn/kn-ps-1-1-17.json"
+                                   },
+                  "kn-ps-1-2":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/kn/kn-ps-1-2.json"
+                                },
+                  "kn-ps-1-3":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/kn/kn-ps-1-3.json"
+                                },
+                  "kn-ps-1-4":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/kn/kn-ps-1-4.json"
+                                },
+                  "kn-ps-1-5":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/kn/kn-ps-1-5.json"
+                                },
+                  "kn-ps-1-6":  {
+                                    "category":  "sut",
+                                    "file":  "static/text/kn/kn-ps-1-6.json"
+                                },
+                  "kn-ps-2":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/kn/kn-ps-2.json"
+                              },
+                  "kn-ps-3":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/kn/kn-ps-3.json"
+                              },
+                  "kn-ps":  {
+                                "category":  "sut",
+                                "file":  "static/text/kn/kn-ps.json"
+                            },
+                  "kn-pv":  {
+                                "category":  "sut",
+                                "file":  "static/text/kn/kn-pv.json"
+                            },
+                  "kn-snp-2":  {
+                                   "category":  "sut",
+                                   "file":  "static/text/kn/kn-snp-2.json"
+                               },
+                  "kn-snp-3":  {
+                                   "category":  "sut",
+                                   "file":  "static/text/kn/kn-snp-3.json"
+                               },
+                  "kn-snp-4":  {
+                                   "category":  "sut",
+                                   "file":  "static/text/kn/kn-snp-4.json"
+                               },
+                  "kn-snp-5":  {
+                                   "category":  "sut",
+                                   "file":  "static/text/kn/kn-snp-5.json"
+                               },
+                  "kn-snp":  {
+                                 "category":  "sut",
+                                 "file":  "static/text/kn/kn-snp.json"
+                             },
+                  "kn-thag-11":  {
+                                     "category":  "sut",
+                                     "file":  "static/text/kn/kn-thag-11.json"
+                                 },
+                  "kn-thag":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/kn/kn-thag.json"
+                              },
+                  "kn-thig":  {
+                                  "category":  "sut",
+                                  "file":  "static/text/kn/kn-thig.json"
+                              },
+                  "kn-ud":  {
+                                "category":  "sut",
+                                "file":  "static/text/kn/kn-ud.json"
+                            },
+                  "kn-vv":  {
+                                "category":  "sut",
+                                "file":  "static/text/kn/kn-vv.json"
+                            },
+                  "anya-vm-12":  {
+                                     "category":  "anya",
+                                     "file":  "static/text/anya/anya-vm-12.json"
+                                 },
+                  "anya-vm":  {
+                                  "category":  "anya",
+                                  "file":  "static/text/anya/anya-vm.json"
+                              },
+                  "atta-an-1-15":  {
+                                       "category":  "atta",
+                                       "file":  "static/text/atta/atta-an-1-15.json"
+                                   },
+                  "atta-an-10":  {
+                                     "category":  "atta",
+                                     "file":  "static/text/atta/atta-an-10.json"
+                                 },
+                  "atta-an-11":  {
+                                     "category":  "atta",
+                                     "file":  "static/text/atta/atta-an-11.json"
+                                 },
+                  "atta-an-2":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-an-2.json"
+                                },
+                  "atta-an-5":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-an-5.json"
+                                },
+                  "atta-an-6":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-an-6.json"
+                                },
+                  "atta-an-7":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-an-7.json"
+                                },
+                  "atta-an-8":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-an-8.json"
+                                },
+                  "atta-an-9":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-an-9.json"
+                                },
+                  "atta-ap-dhk":  {
+                                      "category":  "atta",
+                                      "file":  "static/text/atta/atta-ap-dhk.json"
+                                  },
+                  "atta-ap-dhs-3":  {
+                                        "category":  "atta",
+                                        "file":  "static/text/atta/atta-ap-dhs-3.json"
+                                    },
+                  "atta-ap-kvu":  {
+                                      "category":  "atta",
+                                      "file":  "static/text/atta/atta-ap-kvu.json"
+                                  },
+                  "atta-ap-pat":  {
+                                      "category":  "atta",
+                                      "file":  "static/text/atta/atta-ap-pat.json"
+                                  },
+                  "atta-ap-pug":  {
+                                      "category":  "atta",
+                                      "file":  "static/text/atta/atta-ap-pug.json"
+                                  },
+                  "atta-ap-yam":  {
+                                      "category":  "atta",
+                                      "file":  "static/text/atta/atta-ap-yam.json"
+                                  },
+                  "atta-dn-1":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-dn-1.json"
+                                },
+                  "atta-dn-3":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-dn-3.json"
+                                },
+                  "atta-kn-ap":  {
+                                     "category":  "atta",
+                                     "file":  "static/text/atta/atta-kn-ap.json"
+                                 },
+                  "atta-kn-bv":  {
+                                     "category":  "atta",
+                                     "file":  "static/text/atta/atta-kn-bv.json"
+                                 },
+                  "atta-kn-cp":  {
+                                     "category":  "atta",
+                                     "file":  "static/text/atta/atta-kn-cp.json"
+                                 },
+                  "atta-kn-dhp-9":  {
+                                        "category":  "atta",
+                                        "file":  "static/text/atta/atta-kn-dhp-9.json"
+                                    },
+                  "atta-kn-jat-22-5":  {
+                                           "category":  "atta",
+                                           "file":  "static/text/atta/atta-kn-jat-22-5.json"
+                                       },
+                  "atta-kn-jat-4":  {
+                                        "category":  "atta",
+                                        "file":  "static/text/atta/atta-kn-jat-4.json"
+                                    },
+                  "atta-kn-nc":  {
+                                     "category":  "atta",
+                                     "file":  "static/text/atta/atta-kn-nc.json"
+                                 },
+                  "atta-kn-ps-1-2":  {
+                                         "category":  "atta",
+                                         "file":  "static/text/atta/atta-kn-ps-1-2.json"
+                                     },
+                  "atta-kn-snp-3":  {
+                                        "category":  "atta",
+                                        "file":  "static/text/atta/atta-kn-snp-3.json"
+                                    },
+                  "atta-kn-thag-15":  {
+                                          "category":  "atta",
+                                          "file":  "static/text/atta/atta-kn-thag-15.json"
+                                      },
+                  "atta-kn-thag-2":  {
+                                         "category":  "atta",
+                                         "file":  "static/text/atta/atta-kn-thag-2.json"
+                                     },
+                  "atta-kn-thag-5":  {
+                                         "category":  "atta",
+                                         "file":  "static/text/atta/atta-kn-thag-5.json"
+                                     },
+                  "atta-kn-thag":  {
+                                       "category":  "atta",
+                                       "file":  "static/text/atta/atta-kn-thag.json"
+                                   },
+                  "atta-kn-thig":  {
+                                       "category":  "atta",
+                                       "file":  "static/text/atta/atta-kn-thig.json"
+                                   },
+                  "atta-kn-ud-4":  {
+                                       "category":  "atta",
+                                       "file":  "static/text/atta/atta-kn-ud-4.json"
+                                   },
+                  "atta-kn-ud":  {
+                                     "category":  "atta",
+                                     "file":  "static/text/atta/atta-kn-ud.json"
+                                 },
+                  "atta-kn-vv-4":  {
+                                       "category":  "atta",
+                                       "file":  "static/text/atta/atta-kn-vv-4.json"
+                                   },
+                  "atta-kn-vv":  {
+                                     "category":  "atta",
+                                     "file":  "static/text/atta/atta-kn-vv.json"
+                                 },
+                  "atta-mn-1-1-6":  {
+                                        "category":  "atta",
+                                        "file":  "static/text/atta/atta-mn-1-1-6.json"
+                                    },
+                  "atta-mn-1-2":  {
+                                      "category":  "atta",
+                                      "file":  "static/text/atta/atta-mn-1-2.json"
+                                  },
+                  "atta-mn-1-4":  {
+                                      "category":  "atta",
+                                      "file":  "static/text/atta/atta-mn-1-4.json"
+                                  },
+                  "atta-mn-1":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-mn-1.json"
+                                },
+                  "atta-mn-2-3":  {
+                                      "category":  "atta",
+                                      "file":  "static/text/atta/atta-mn-2-3.json"
+                                  },
+                  "atta-mn-2":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-mn-2.json"
+                                },
+                  "atta-mn-3":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-mn-3.json"
+                                },
+                  "atta-sn-1-5":  {
+                                      "category":  "atta",
+                                      "file":  "static/text/atta/atta-sn-1-5.json"
+                                  },
+                  "atta-sn-1":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-sn-1.json"
+                                },
+                  "atta-sn-2":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-sn-2.json"
+                                },
+                  "atta-sn-3":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-sn-3.json"
+                                },
+                  "atta-sn-4":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-sn-4.json"
+                                },
+                  "atta-sn-5":  {
+                                    "category":  "atta",
+                                    "file":  "static/text/atta/atta-sn-5.json"
+                                },
+                  "atta-vp-cv":  {
+                                     "category":  "atta",
+                                     "file":  "static/text/atta/atta-vp-cv.json"
+                                 },
+                  "atta-vp-mv":  {
+                                     "category":  "atta",
+                                     "file":  "static/text/atta/atta-vp-mv.json"
+                                 },
+                  "atta-vp-pct":  {
+                                      "category":  "atta",
+                                      "file":  "static/text/atta/atta-vp-pct.json"
+                                  },
+                  "atta-vp-prj-2":  {
+                                        "category":  "atta",
+                                        "file":  "static/text/atta/atta-vp-prj-2.json"
+                                    },
+                  "atta-vp-prj-3":  {
+                                        "category":  "atta",
+                                        "file":  "static/text/atta/atta-vp-prj-3.json"
+                                    },
+                  "atta-vp-prj":  {
+                                      "category":  "atta",
+                                      "file":  "static/text/atta/atta-vp-prj.json"
+                                  },
+                  "atta-vp-pv":  {
+                                     "category":  "atta",
+                                     "file":  "static/text/atta/atta-vp-pv.json"
+                                 },
+                  "ap-dhk":  {
+                                 "category":  "abh",
+                                 "file":  "static/text/ap/ap-dhk.json"
+                             },
+                  "ap-dhs-3":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-dhs-3.json"
+                               },
+                  "ap-dhs-5":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-dhs-5.json"
+                               },
+                  "ap-dhs":  {
+                                 "category":  "abh",
+                                 "file":  "static/text/ap/ap-dhs.json"
+                             },
+                  "ap-kvu-1-2":  {
+                                     "category":  "abh",
+                                     "file":  "static/text/ap/ap-kvu-1-2.json"
+                                 },
+                  "ap-kvu-11":  {
+                                    "category":  "abh",
+                                    "file":  "static/text/ap/ap-kvu-11.json"
+                                },
+                  "ap-kvu-15":  {
+                                    "category":  "abh",
+                                    "file":  "static/text/ap/ap-kvu-15.json"
+                                },
+                  "ap-kvu-19":  {
+                                    "category":  "abh",
+                                    "file":  "static/text/ap/ap-kvu-19.json"
+                                },
+                  "ap-kvu-2":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-kvu-2.json"
+                               },
+                  "ap-kvu-3":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-kvu-3.json"
+                               },
+                  "ap-kvu-5":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-kvu-5.json"
+                               },
+                  "ap-kvu-8":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-kvu-8.json"
+                               },
+                  "ap-kvu":  {
+                                 "category":  "abh",
+                                 "file":  "static/text/ap/ap-kvu.json"
+                             },
+                  "ap-pat-1-12":  {
+                                      "category":  "abh",
+                                      "file":  "static/text/ap/ap-pat-1-12.json"
+                                  },
+                  "ap-pat-2-47":  {
+                                      "category":  "abh",
+                                      "file":  "static/text/ap/ap-pat-2-47.json"
+                                  },
+                  "ap-pat-2-83":  {
+                                      "category":  "abh",
+                                      "file":  "static/text/ap/ap-pat-2-83.json"
+                                  },
+                  "ap-pat-2":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-pat-2.json"
+                               },
+                  "ap-pat-3":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-pat-3.json"
+                               },
+                  "ap-pat-4":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-pat-4.json"
+                               },
+                  "ap-pug":  {
+                                 "category":  "abh",
+                                 "file":  "static/text/ap/ap-pug.json"
+                             },
+                  "ap-vbh-10":  {
+                                    "category":  "abh",
+                                    "file":  "static/text/ap/ap-vbh-10.json"
+                                },
+                  "ap-vbh-14":  {
+                                    "category":  "abh",
+                                    "file":  "static/text/ap/ap-vbh-14.json"
+                                },
+                  "ap-vbh-17":  {
+                                    "category":  "abh",
+                                    "file":  "static/text/ap/ap-vbh-17.json"
+                                },
+                  "ap-vbh-2":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-vbh-2.json"
+                               },
+                  "ap-vbh-6":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-vbh-6.json"
+                               },
+                  "ap-vbh":  {
+                                 "category":  "abh",
+                                 "file":  "static/text/ap/ap-vbh.json"
+                             },
+                  "ap-yam-10-3-4":  {
+                                        "category":  "abh",
+                                        "file":  "static/text/ap/ap-yam-10-3-4.json"
+                                    },
+                  "ap-yam-10-3":  {
+                                      "category":  "abh",
+                                      "file":  "static/text/ap/ap-yam-10-3.json"
+                                  },
+                  "ap-yam-10-4":  {
+                                      "category":  "abh",
+                                      "file":  "static/text/ap/ap-yam-10-4.json"
+                                  },
+                  "ap-yam-10":  {
+                                    "category":  "abh",
+                                    "file":  "static/text/ap/ap-yam-10.json"
+                                },
+                  "ap-yam-3":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-yam-3.json"
+                               },
+                  "ap-yam-4":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-yam-4.json"
+                               },
+                  "ap-yam-6":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-yam-6.json"
+                               },
+                  "ap-yam-7-5":  {
+                                     "category":  "abh",
+                                     "file":  "static/text/ap/ap-yam-7-5.json"
+                                 },
+                  "ap-yam-7":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-yam-7.json"
+                               },
+                  "ap-yam-8":  {
+                                   "category":  "abh",
+                                   "file":  "static/text/ap/ap-yam-8.json"
+                               },
+                  "ap-yam":  {
+                                 "category":  "abh",
+                                 "file":  "static/text/ap/ap-yam.json"
+                             },
+                  "vp-cv-3":  {
+                                  "category":  "vin",
+                                  "file":  "static/text/vp/vp-cv-3.json"
+                              },
+                  "vp-cv-5":  {
+                                  "category":  "vin",
+                                  "file":  "static/text/vp/vp-cv-5.json"
+                              },
+                  "vp-cv-8":  {
+                                  "category":  "vin",
+                                  "file":  "static/text/vp/vp-cv-8.json"
+                              },
+                  "vp-cv":  {
+                                "category":  "vin",
+                                "file":  "static/text/vp/vp-cv.json"
+                            },
+                  "vp-mv-2":  {
+                                  "category":  "vin",
+                                  "file":  "static/text/vp/vp-mv-2.json"
+                              },
+                  "vp-mv-4":  {
+                                  "category":  "vin",
+                                  "file":  "static/text/vp/vp-mv-4.json"
+                              },
+                  "vp-mv-6":  {
+                                  "category":  "vin",
+                                  "file":  "static/text/vp/vp-mv-6.json"
+                              },
+                  "vp-mv-7":  {
+                                  "category":  "vin",
+                                  "file":  "static/text/vp/vp-mv-7.json"
+                              },
+                  "vp-mv-9":  {
+                                  "category":  "vin",
+                                  "file":  "static/text/vp/vp-mv-9.json"
+                              },
+                  "vp-mv":  {
+                                "category":  "vin",
+                                "file":  "static/text/vp/vp-mv.json"
+                            },
+                  "vp-pct-1-1-5":  {
+                                       "category":  "vin",
+                                       "file":  "static/text/vp/vp-pct-1-1-5.json"
+                                   },
+                  "vp-pct-1-2":  {
+                                     "category":  "vin",
+                                     "file":  "static/text/vp/vp-pct-1-2.json"
+                                 },
+                  "vp-pct-2-4":  {
+                                     "category":  "vin",
+                                     "file":  "static/text/vp/vp-pct-2-4.json"
+                                 },
+                  "vp-pct-2":  {
+                                   "category":  "vin",
+                                   "file":  "static/text/vp/vp-pct-2.json"
+                               },
+                  "vp-pct":  {
+                                 "category":  "vin",
+                                 "file":  "static/text/vp/vp-pct.json"
+                             },
+                  "vp-prj-2-3":  {
+                                     "category":  "vin",
+                                     "file":  "static/text/vp/vp-prj-2-3.json"
+                                 },
+                  "vp-prj-3-4":  {
+                                     "category":  "vin",
+                                     "file":  "static/text/vp/vp-prj-3-4.json"
+                                 },
+                  "vp-prj-3":  {
+                                   "category":  "vin",
+                                   "file":  "static/text/vp/vp-prj-3.json"
+                               },
+                  "vp-prj-4":  {
+                                   "category":  "vin",
+                                   "file":  "static/text/vp/vp-prj-4.json"
+                               },
+                  "vp-prj":  {
+                                 "category":  "vin",
+                                 "file":  "static/text/vp/vp-prj.json"
+                             },
+                  "vp-pv-14":  {
+                                   "category":  "vin",
+                                   "file":  "static/text/vp/vp-pv-14.json"
+                               },
+                  "vp-pv-2":  {
+                                  "category":  "vin",
+                                  "file":  "static/text/vp/vp-pv-2.json"
+                              },
+                  "vp-pv-5":  {
+                                  "category":  "vin",
+                                  "file":  "static/text/vp/vp-pv-5.json"
+                              },
+                  "vp-pv":  {
+                                "category":  "vin",
+                                "file":  "static/text/vp/vp-pv.json"
+                            }
+              }
+}

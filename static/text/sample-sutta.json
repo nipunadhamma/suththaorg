@@ -1,0 +1,92 @@
+{
+
+"id":"dn01",
+
+"metadata":{
+
+
+"nikaya":"Digha Nikaya",
+
+"number":"DN 1",
+
+"title_si":
+"බ්‍රහ්මජාල සූත්‍රය",
+
+"title_pali":
+"Brahmajāla Sutta"
+
+
+},
+
+
+
+"languages":{
+
+
+"pali":[
+
+
+{
+"id":"dn01-p001",
+
+"text":
+"Evaṃ me sutaṃ."
+
+},
+
+
+{
+"id":"dn01-p002",
+
+"text":
+"Ekaṃ samayaṃ Bhagavā antarā ca Rājagahaṃ antarā ca Nāḷandaṃ addhānamaggappaṭipanno hoti."
+
+}
+
+
+],
+
+
+
+"sinhala":[
+
+
+{
+"id":"dn01-s001",
+
+"text":
+"මා විසින් මෙසේ අසන ලදී."
+
+},
+
+
+{
+"id":"dn01-s002",
+
+"text":
+"එක් සමයක භාග්‍යවතුන් වහන්සේ රාජගහ හා නාලන්දාව අතර මාර්ගයේ ගමන් කළ සේක."
+
+}
+
+
+]
+
+
+},
+
+
+
+
+"commentary":{
+
+
+"atthakatha":
+
+"මෙම සූත්‍රය ආරම්භ වන්නේ මෙසේ අසන ලදී යනුවෙනි."
+
+
+}
+
+
+
+}

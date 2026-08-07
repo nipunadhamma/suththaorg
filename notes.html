@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="si" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>සියලු සටහන් - SUTHTHA.ORG</title>
+  <link rel="icon" type="image/png" href="static/images/android-icon-192x192.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { height: auto; min-height: 100vh; }
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 30px 18px 60px;
+    }
+    .page h1 { color: var(--accent); }
+    .notes-list { display: flex; flex-direction: column; gap: 14px; }
+    .note-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow-sm);
+    }
+    .note-card .nc-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+    .note-card .nc-book { font-weight: 700; color: var(--accent); }
+    .note-card .nc-date { font-size: 12px; color: var(--muted); }
+    .note-card .nc-body {
+      font-family: var(--font-serif);
+      font-size: 15px;
+      white-space: pre-wrap;
+      line-height: 1.7;
+    }
+    .note-card .nc-actions { margin-top: 8px; display: flex; gap: 8px; }
+    .note-card .nc-actions button { font-size: 12.5px; }
+    .nc-open {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .nc-del { color: #c0392b; }
+    .empty-state { color: var(--muted); text-align: center; padding: 60px 0; }
+    .back-link { margin-bottom: 18px; display: inline-block; }
+  </style>
+</head>
+<body data-page="notes">
+
+  <div class="app" style="height:auto; min-height:100vh;">
+    <header class="navbar">
+      <a class="brand" href="index.html">
+        <img src="static/images/app-logo.jpg" alt="SUTHTHA.ORG">
+        <span class="brand-text">
+          <span class="brand-name">SUTHTHA.ORG</span>
+          <span class="brand-sub">සියලු සටහන්</span>
+        </span>
+      </a>
+      <nav class="nav-links">
+        <a href="https://nipunadhamma.org" target="_blank" rel="noopener">නිපුනධම්ම</a>
+        <a href="https://suththa.org">ධම්මපොත</a>
+        <a href="index.html">HOME</a>
+        <a href="notes.html" class="active">NOTE</a>
+        <button class="theme-toggle" id="themeToggle" title="Dark / Light mode">🌙</button>
+      </nav>
+    </header>
+
+    <div class="page">
+      <a class="back-link" href="index.html">← ආපසු කියවනයට</a>
+      <h1>📝 සියලු සටහන්</h1>
+      <p class="f-about" style="opacity:.85;">මෙහි ඔබ කියවන සූත්‍ර ගැන ලියූ සටහන් ලැයිස්තුවයි.</p>
+      <div class="notes-list" id="notesList">
+        <div class="empty-state">සටහන් නොමැත. කියවනයේ 📝 NOTE බොත්තමෙන් සටහනක් එක් කරන්න.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const LS_KEY = 'suththa_notes';
+
+    function loadNotes() {
+      try { return JSON.parse(localStorage.getItem(LS_KEY) || '[]'); }
+      catch (e) { return []; }
+    }
+
+    function saveNotes(list) {
+      localStorage.setItem(LS_KEY, JSON.stringify(list));
+    }
+
+    function esc(s) {
+      return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function render() {
+      const list = loadNotes();
+      const el = document.getElementById('notesList');
+      if (!list.length) {
+        el.innerHTML = '<div class="empty-state">සටහන් නොමැත. කියවනයේ 📝 NOTE බොත්තමෙන් සටහනක් එක් කරන්න.</div>';
+        return;
+      }
+      el.innerHTML = list.slice().reverse().map(n => `
+        <div class="note-card">
+          <div class="nc-head">
+            <span class="nc-book">${esc(n.bookTitle || n.bookId || '')}</span>
+            <span class="nc-date">${esc(n.date || '')}</span>
+          </div>
+          <div class="nc-body">${esc(n.note)}</div>
+          <a class="nc-open" href="index.html?b=${encodeURIComponent(n.bookId || '')}">සූත්‍රය විවෘත කරන්න →</a>
+          <div class="nc-actions">
+            <button class="nc-del" data-id="${esc(n.id)}">මකන්න</button>
+          </div>
+        </div>
+      `).join('');
+      el.querySelectorAll('.nc-del').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const id = btn.getAttribute('data-id');
+          saveNotes(loadNotes().filter(n => n.id !== id));
+          render();
+        });
+      });
+    }
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const root = document.documentElement;
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      document.getElementById('themeToggle').textContent = next === 'dark' ? '☀️' : '🌙';
+      try { localStorage.setItem('suththa_theme', next); } catch (e) {}
+    });
+
+    try {
+      const saved = localStorage.getItem('suththa_theme');
+      if (saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.getElementById('themeToggle').textContent = '☀️';
+      }
+    } catch (e) {}
+
+    var y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+
+    render();
+  </script>
+</body>
+</html>
