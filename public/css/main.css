@@ -1,0 +1,108 @@
+/* ============================================================
+   Suththa.org — Base / Reset / Common
+   ============================================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sinhala);
+  font-size: var(--font-base);
+  line-height: var(--line-height);
+  /* subtle aged-paper texture */
+  background-image:
+    radial-gradient(ellipse at top, rgba(255, 255, 255, 0.35), transparent 60%),
+    repeating-linear-gradient(0deg, rgba(160, 120, 60, 0.025) 0 2px, transparent 2px 5px);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+[data-theme='dark'] body {
+  background-image:
+    radial-gradient(ellipse at top, rgba(255, 220, 150, 0.06), transparent 60%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.012) 0 2px, transparent 2px 5px);
+}
+
+a {
+  color: var(--accent-deep);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+[data-theme='dark'] a { color: var(--accent); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sinhala-heading);
+  color: var(--accent-deep);
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 0.6em;
+}
+
+p { margin: 0 0 1em; }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--ink);
+}
+
+img { max-width: 100%; }
+
+.hidden { display: none !important; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); border: 0;
+}
+
+.muted { color: var(--ink-soft); }
+.small { font-size: 0.85em; }
+
+/* Generic page wrapper */
+.page-shell {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 1.2rem 1rem 4rem;
+}
+
+/* Simple banner / message strip */
+.banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  background: var(--paper-light);
+  border: 1px solid var(--paper-edge);
+  border-left: 4px solid var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.9rem;
+  margin: 0.8rem 0;
+  font-size: 0.95rem;
+}
+.banner.error {
+  background: var(--error-bg);
+  border-left-color: var(--error);
+  color: var(--error);
+}

@@ -1,0 +1,170 @@
+/* ============================================================
+   Suththa.org — Dictionary page
+   ============================================================ */
+
+.dict-shell {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 1.2rem 1rem 4rem;
+}
+
+.dict-title {
+  font-family: var(--font-sinhala-heading);
+  font-weight: 800;
+  color: var(--accent-deep);
+  font-size: 1.6rem;
+  margin: 0.4rem 0 0.2rem;
+}
+
+.dict-sub {
+  color: var(--ink-soft);
+  margin-bottom: 1rem;
+}
+
+.dict-search-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.dict-input {
+  flex: 1;
+  border: 1px solid var(--paper-dark);
+  border-radius: var(--radius);
+  background: var(--paper-light);
+  padding: 0.55rem 0.9rem;
+  font-size: 1.05rem;
+}
+
+/* dictionary source checkboxes */
+.dict-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-bottom: 1.1rem;
+}
+.dict-source label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.dict-source input { accent-color: var(--accent); }
+
+.dict-count {
+  color: var(--ink-faint);
+  font-size: 0.85rem;
+  margin: 0.2rem 0 0.8rem;
+}
+
+/* word breakup (word analysis) */
+.dict-breakups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.breakup {
+  background: var(--info-bg);
+  border: 1px solid var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 0.35rem 0.7rem;
+  font-size: 0.92rem;
+}
+.breakup .bu-type {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  color: var(--accent-deep);
+  font-size: 0.72rem;
+  padding: 0 0.4rem;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+/* dictionary result rows */
+.dict-results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.dict-result {
+  background: var(--paper-light);
+  border: 1px solid var(--paper-edge);
+  border-left: 4px solid var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.9rem;
+  box-shadow: var(--shadow-soft);
+}
+.dict-result .dr-word {
+  font-family: var(--font-pali);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--accent-deep);
+}
+.dict-result .dr-dict {
+  display: inline-block;
+  border: 1px solid var(--paper-dark);
+  border-radius: 10px;
+  color: var(--ink-soft);
+  font-size: 0.7rem;
+  padding: 0 0.45rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+.dict-result .dr-meaning {
+  margin-top: 0.35rem;
+  font-size: 0.98rem;
+}
+.dict-result .dr-meaning .bold { color: var(--accent-deep); font-weight: 700; }
+.dict-result .dr-meaning .underline { text-decoration: underline; color: var(--error); }
+
+/* prefix suggestions */
+.dict-prefix {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+.prefix-chip {
+  border: 1px solid var(--paper-dark);
+  background: var(--paper-light);
+  border-radius: 14px;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.85rem;
+  color: var(--accent-deep);
+}
+.prefix-chip:hover { background: var(--paper-deep); }
+
+/* breakup button inside a result */
+.dr-breakup {
+  border: 1px solid var(--paper-dark);
+  background: var(--paper);
+  color: var(--ink-soft);
+  border-radius: 10px;
+  font-size: 0.75rem;
+  padding: 0.05rem 0.5rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+.dr-breakup:hover { color: var(--accent-deep); background: var(--paper-deep); }
+
+/* expanded word-analysis box */
+.breakup-box {
+  margin-top: 0.5rem;
+  background: var(--info-bg);
+  border: 1px solid var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 0.45rem 0.7rem;
+  font-size: 0.92rem;
+}
+.breakup-box .bw-word {
+  font-family: var(--font-pali);
+  font-weight: 700;
+  color: var(--accent-deep);
+  margin-right: 0.5rem;
+}
+.breakup-box .bw-breakup { margin-top: 0.25rem; }
+
+.dict-loading { margin-top: 1rem; }

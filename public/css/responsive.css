@@ -1,0 +1,36 @@
+/* ============================================================
+   Suththa.org — Responsive
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .book-spread { display: block; }
+  .book-spread .col + .col,
+  .book-spread .spread-page + .spread-page {
+    margin-top: 0.8rem;
+  }
+  .book-page { padding: 1.6rem 1.2rem 1.2rem; }
+  .book { max-width: 100%; padding: 0 0.5rem; }
+  .footnote-item { flex: 1 1 100%; }
+}
+
+@media (max-width: 640px) {
+  :root { --header-h: 3rem; }
+  .brand .brand-text small { display: none; }
+  .header-actions .header-btn span { display: none; }
+  .header-btn { padding: 0.35rem; }
+  .search-type-select { max-width: 7rem; font-size: 0.8rem; }
+  .book-cover { padding: 2.4rem 1.4rem; margin: 2rem 0.6rem; }
+  .book-cover h1 { font-size: 1.6rem; }
+  .entry.heading[level='5'] { font-size: 1.5em; }
+  .entry.heading[level='4'] { font-size: 1.4em; }
+  .entry.heading[level='3'] { font-size: 1.3em; }
+  .entry.centered[level='5'] { font-size: 1.7em; }
+  .entry.centered[level='4'] { font-size: 1.5em; }
+  .dict-search-row { flex-direction: column; }
+}
+
+@media (max-width: 420px) {
+  .tabs-strip { padding: 0.3rem 0.4rem; }
+  .tab-chip { max-width: 11rem; }
+  .toolbar-row .seg button { padding: 0.3rem 0.5rem; }
+}

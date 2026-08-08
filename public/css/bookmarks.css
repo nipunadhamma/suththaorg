@@ -1,0 +1,84 @@
+/* ============================================================
+   Suththa.org — Bookmarks (starred suttas) page
+   ============================================================ */
+
+.bookmarks-shell {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 1.2rem 1rem 4rem;
+}
+
+.bookmarks-title {
+  font-family: var(--font-sinhala-heading);
+  font-weight: 800;
+  color: var(--accent-deep);
+  font-size: 1.6rem;
+  margin: 0.4rem 0 0.2rem;
+}
+
+.bookmarks-sub {
+  color: var(--ink-soft);
+  margin-bottom: 1.1rem;
+}
+
+/* breadcrumb link of a bookmark */
+.bm-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.6rem;
+  cursor: pointer;
+  padding: 0.4rem 0;
+}
+.bm-breadcrumb .bm-pitaka {
+  font-size: 0.85rem;
+  border: 1px solid var(--accent-soft);
+  border-radius: 10px;
+  padding: 0.05rem 0.5rem;
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+.bm-breadcrumb .bm-name {
+  font-size: 1.1rem;
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+.bm-breadcrumb .bm-parents {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.bm-breadcrumb:hover .bm-name { text-decoration: underline; }
+
+.bookmark-item {
+  background: var(--paper-light);
+  border: 1px solid var(--paper-edge);
+  border-radius: var(--radius-lg);
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+}
+.bookmark-item .bm-remove {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  border: none;
+  background: none;
+  color: var(--ink-faint);
+  font-size: 0.9rem;
+  padding: 0.3rem;
+}
+.bookmark-item .bm-remove:hover { color: var(--error); }
+
+/* snippet of the starred text */
+.bm-text {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--ink);
+  padding: 0.5rem 0.7rem;
+  border-left: 3px solid var(--accent-soft);
+  background: var(--paper);
+}
+.bm-text .bold { color: var(--accent-deep); font-weight: 700; }
+.bm-text .underline { text-decoration: underline; color: var(--error); }
+.bm-text .highlight { background: var(--highlight); }

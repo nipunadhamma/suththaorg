@@ -1,0 +1,74 @@
+/* ============================================================
+   Suththa.org — CSS Variables (old book / parchment theme)
+   ============================================================ */
+
+:root {
+  /* ---- Paper palette (aged palm-leaf & old printed book) ---- */
+  --paper: #f5ecd6;            /* main page background */
+  --paper-light: #fbf5e4;      /* lighter areas / cards */
+  --paper-deep: #ecdfbd;       /* shaded areas */
+  --paper-edge: #d9c49a;       /* book edge / borders */
+  --paper-dark: #c9ad7b;       /* strong border / orns */
+
+  /* ---- Ink palette ---- */
+  --ink: #3d2f1f;              /* main reading text (sepia) */
+  --ink-soft: #6f5c42;         /* secondary text */
+  --ink-faint: #99856a;        /* hints / disabled */
+
+  /* ---- Accent (saffron / sangha) ---- */
+  --accent: #9a5b22;
+  --accent-deep: #7a4719;
+  --accent-soft: #c89a56;
+  --gold: #b8860b;
+
+  /* ---- Semantic ---- */
+  --info: #7a4719;
+  --info-bg: #f0e2c3;
+  --error: #9d2c1f;
+  --error-bg: #f3dcd4;
+  --success: #556b2f;
+  --highlight: #f5d78e;        /* word/entry highlight */
+  --highlight-soft: rgba(245, 215, 142, 0.35);
+
+  /* ---- Reader dimensions ---- */
+  --header-h: 3.4rem;
+  --content-max: 1000px;
+  --font-base: 1.06rem;
+  --line-height: 1.75;
+
+  /* ---- Decorative ---- */
+  --shadow-page: 0 2px 8px rgba(90, 65, 30, 0.18), 0 10px 28px rgba(90, 65, 30, 0.22);
+  --shadow-soft: 0 1px 4px rgba(90, 65, 30, 0.14);
+  --radius: 6px;
+  --radius-lg: 12px;
+
+  --font-sinhala: 'Noto Serif Sinhala', 'Abhaya Libre', 'Noto Sans Sinhala', serif;
+  --font-sinhala-ui: 'Noto Sans Sinhala', 'Noto Serif Sinhala', sans-serif;
+  --font-sinhala-heading: 'Abhaya Libre', 'Noto Serif Sinhala', serif;
+  --font-pali: 'EB Garamond', 'Noto Serif Sinhala', Georgia, serif;
+}
+
+/* Dark (night) mode — RAT/Raja old night lamp feel */
+[data-theme='dark'] {
+  --paper: #211a10;
+  --paper-light: #2a2115;
+  --paper-deep: #181209;
+  --paper-edge: #3a2d1b;
+  --paper-dark: #4a3a22;
+  --ink: #d9c7a3;
+  --ink-soft: #ab9774;
+  --ink-faint: #7c6d52;
+  --accent: #d0a35e;
+  --accent-deep: #b8874a;
+  --accent-soft: #a3804d;
+  --gold: #d4af37;
+  --info: #d0a35e;
+  --info-bg: #322718;
+  --error: #e08b7c;
+  --error-bg: #3a211c;
+  --success: #9cb36a;
+  --highlight: #7a6328;
+  --highlight-soft: rgba(122, 99, 40, 0.4);
+  --shadow-page: 0 2px 8px rgba(0, 0, 0, 0.5), 0 10px 28px rgba(0, 0, 0, 0.55);
+  --shadow-soft: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
