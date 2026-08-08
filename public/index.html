@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f5ecd6">
+  <meta name="format-detection" content="telephone=no">
+  <title>Suththa.org — සම්පූර්ණ ත්‍රිපිටකය</title>
+  <meta name="description" content="Suththa.org — සම්පූර්ණ ත්‍රිපිටකය කියවන්න. පාළි මූල ග්‍රන්ථ, සිංහල පරිවර්තන, ශබ්දකෝෂය සහ අට්ඨකථා නොමිලේ.">
+  <link rel="canonical" href="https://tripitaka.suththa.org/">
+  <link rel="icon" href="static/images/favicon-96x96.png">
+  <link rel="apple-touch-icon" href="static/images/app-logo.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta property="og:site_name" content="Suththa.org">
+  <meta property="og:locale" content="si_LK">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Suththa.org — සම්පූර්ණ ත්‍රිපිටකය">
+  <meta property="og:description" content="පාළි මූල ග්‍රන්ථ, සිංහල පරිවර්තන, ශබ්දකෝෂය සහ අට්ඨකථා නොමිලේ කියවන්න.">
+  <meta property="og:url" content="https://tripitaka.suththa.org/">
+  <meta property="og:image" content="https://tripitaka.suththa.org/static/images/og-500x300.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Suththa.org — සම්පූර්ණ ත්‍රිපිටකය">
+  <meta name="twitter:description" content="පාළි මූල ග්‍රන්ථ, සිංහල පරිවර්තන, ශබ්දකෝෂය සහ අට්ඨකථා නොමිලේ කියවන්න.">
+  <meta name="twitter:image" content="https://tripitaka.suththa.org/static/images/og-500x300.png">
+  <script type="application/ld+json" id="ld-seo">{"@context":"https://schema.org","@type":"WebSite","name":"Suththa.org","url":"https://tripitaka.suththa.org/","description":"සම්පූර්ණ ත්‍රිපිටකය — පාළි මූල ග්‍රන්ථ, සිංහල පරිවර්තන, ශබ්දකෝෂය සහ අට්ඨකථා","inLanguage":"si","publisher":{"@type":"Organization","name":"Suththa.org"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@400;600;700&family=Noto+Sans+Sinhala:wght@400;600&family=Abhaya+Libre:wght@400;600;700;800&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/reader.css">
+  <link rel="stylesheet" href="css/dictionary.css">
+  <link rel="stylesheet" href="css/notes.css">
+  <link rel="stylesheet" href="css/bookmarks.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div id="main-nav"></div>
+
+  <div class="reader-layout">
+    <aside id="sidebar" class="sidebar">
+      <div class="tree-header">ත්‍රිපිටක ග්‍රන්ථ</div>
+      <div id="tree-filters" class="tree-root-nodes"></div>
+      <div id="tree" class="tree"></div>
+    </aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+    <main class="reader-main">
+      <div class="reader-toolbar">
+        <div class="seg">
+          <button id="btn-prev-tab" title="පෙර ටැබ්">◀</button>
+          <button id="btn-next-tab" title="මීළඟ ටැබ්">▶</button>
+        </div>
+        <div class="seg">
+          <button id="btn-prev-text" title="පෙර ග්‍රන්ථය">⏮</button>
+          <button id="btn-next-text" title="මීළඟ ග්‍රන්ථය">⏭</button>
+        </div>
+        <button id="btn-columns" class="btn small" title="තීරු පෙරළන්න">පාළි + සිංහල</button>
+        <span class="spacer"></span>
+        <button id="btn-close-tab" class="btn small" title="ටැබ් වසන්න">✕</button>
+        <button id="btn-settings" class="btn small" title="සැකසුම්">සැකසුම්</button>
+      </div>
+
+      <div id="tabs-strip" class="tabs-strip"></div>
+      <div id="tabs-content"></div>
+    </main>
+  </div>
+
+  <div id="fn-tooltip" class="fn-tooltip"></div>
+
+  <aside id="inline-dict" class="inline-dict">
+    <div class="idict-head">
+      <input id="idict-input" class="idict-input" type="text" placeholder="ශබ්දකෝෂයේ සොයන්න…" autocomplete="off">
+      <button data-idict-backspace class="icon-btn" title="අකුරක් අඩු කරන්න">⌫</button>
+      <button data-idict-close class="icon-btn" title="වසන්න">✕</button>
+    </div>
+    <div id="idict-body" class="idict-body"></div>
+  </aside>
+
+  <div id="fts-panel" class="fts-panel">
+    <div class="fts-head"><span id="fts-progress"></span><button data-fts-close title="වසන්න">✕</button></div>
+    <div id="fts-results" class="fts-results"></div>
+  </div>
+
+  <div id="settings-backdrop" class="dialog-backdrop">
+    <div id="settings-dialog" class="dialog">
+      <div class="dialog-title">කියවීමේ සැකසුම්</div>
+      <div class="settings-grid">
+        <label>තද පසුබිම
+          <input type="checkbox" data-setting="set-darkmode">
+        </label>
+        <label>තීරු
+          <select data-setting="set-columns">
+            <option value="3">පේළි අතර (පාළි-සිංහල)</option>
+            <option value="2">පාළි + සිංහල (පිටු දෙක)</option>
+            <option value="0">පාළි පමණි</option>
+            <option value="1">සිංහල පමණි</option>
+          </select>
+        </label>
+        <label>ග්‍රන්ථ ගස භාෂාව
+          <select data-setting="set-tree-lang">
+            <option value="pali">පාළි</option>
+            <option value="sinh">සිංහල</option>
+          </select>
+        </label>
+        <label>පාද සටහන්
+          <select data-setting="set-footnote-method">
+            <option value="click">ක්ලික් කිරීම</option>
+            <option value="hover">මත තබාගැනීම</option>
+            <option value="end-page">පිටු අවසානයේ</option>
+            <option value="hidden">සඟවන්න</option>
+          </select>
+        </label>
+        <label>බන්ධන අකුරු
+          <input type="checkbox" data-setting="set-bandi">
+        </label>
+        <label>විශේෂ අකුරු (පාළි)
+          <input type="checkbox" data-setting="set-special">
+        </label>
+        <label>පිටු අංක
+          <input type="checkbox" data-setting="set-page-nums">
+        </label>
+        <label>අකුරු ප්‍රමාණය
+          <select data-setting="set-font-size">
+            <option value="-3">කුඩා</option>
+            <option value="0">සාමාන්‍ය</option>
+            <option value="2">මධ්‍යම</option>
+            <option value="4">විශාල</option>
+          </select>
+        </label>
+      </div>
+      <div class="dialog-actions"><button class="btn primary" data-dialog-close>වසන්න</button></div>
+    </div>
+  </div>
+
+  <div id="snackbar" class="snackbar"></div>
+  <div id="boot" class="page-shell"><div class="banner">දත්ත පූරණය වෙමින්…</div></div>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/utils.js" defer></script>
+  <script src="js/store.js" defer></script>
+  <script src="js/tree.js" defer></script>
+  <script src="js/render.js" defer></script>
+  <script src="js/dictionary.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/seo.js" defer></script>
+  <script src="js/notes.js" defer></script>
+  <script src="js/bookmarks.js" defer></script>
+  <script src="js/reader.js" defer></script>
+  <script src="js/main-nav.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function () {})
+      })
+    }
+  </script>
+</body>
+</html>
