@@ -1,0 +1,13 @@
+{
+  "name": "tripitaka-suththa-org",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Suththa.org — සම්පූර්ණ ත්‍රිපිටකය (static reader + dictionary)",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "fastify": "^3.8.0",
+    "fastify-static": "^4.4.1"
+  }
+}
